@@ -13,7 +13,7 @@
                     <div class="poster__info">
                         <a href="{% url 'profile' post.author.pk %}" class="poster__name">
                             {% if post.author.profile_pic %}
-                                <img class="poster__profilepic" src="{{ post.author.profile_pic.url }}">
+                                <img class="poster__profilepic" src="/{{ post.author.profile_pic.url }}">
                             {% endif %}
                             {{ post.author.username }}
                         </a>
